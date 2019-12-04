@@ -9,7 +9,7 @@ Finish time: __9:54am___
 
 Actual time needed to complete: ___40mins__
 
-=============================================================================================================================
+
 
 
 Number and name of feature: ______________Filter images__________________
@@ -22,14 +22,14 @@ Finish time: _11:03am____
 
 Actual time needed to complete: ____68mins_
 
-=================================================================================================================================
 
-Number and name of feature: ________________________________
 
-Estimate of time needed to complete: _____
+Number and name of feature: _______________Style the application________
 
-Start time: _____
+Estimate of time needed to complete: ___15mins__
 
-Finish time: _____
+Start time: ___11:05am__
 
-Actual time needed to complete: _____
+Finish time: __11:40am___
+
+Actual time needed to complete: __35mins___
