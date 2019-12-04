@@ -1,4 +1,8 @@
 # 301d60-lab02
+## Pair Progrqmming 
+### Jerome and Phong
+
+
 Number and name of feature: _______________Displaying image on the index.html_________________
 
 Estimate of time needed to complete: ____30mins_
@@ -9,6 +13,7 @@ Finish time: __9:54am___
 
 Actual time needed to complete: ___40mins__
 
+------------------------------------------------------------------------
 
 
 
@@ -21,6 +26,8 @@ Start time: ___9:55am__
 Finish time: _11:03am____
 
 Actual time needed to complete: ____68mins_
+
+------------------------------------------------------------------------
 
 
 
