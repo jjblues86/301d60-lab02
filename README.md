@@ -1,5 +1,5 @@
 # 301d60-lab02
-## Pair Progrqmming 
+## Pair Programming 
 ### Jerome and Phong
 
 
