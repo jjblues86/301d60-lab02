@@ -5,7 +5,7 @@ const keys = [];
 
 
 // creating a constructor for all the images
-function Images(title,image_url,description,keyword,horn){
+function Images(title, image_url, description, keyword, horn) {
   this.title = title;
   this.image_url = image_url;
   this.description = description;
@@ -17,18 +17,15 @@ function Images(title,image_url,description,keyword,horn){
 
 
 // creating a cloned copy for rendering the images
-Images.prototype.renderClonedImages = function(){
+Images.prototype.renderClonedImages = function () {
 
   let clone = $(`#photo-template`).clone();
 
   clone.find('h2').text(this.title);
   clone.find('img').attr('src', this.image_url);
-  clone.find('img').attr('alt', this.keyword);
+  clone.attr('id', this.keyword);
   clone.find('p').text(this.description);
-  clone.attr('class', this.keyword);
-
   clone.removeAttr('class');
-
   $('main').append(clone);
 }
 
@@ -41,13 +38,13 @@ $.get('data.json').then(
       images.renderClonedImages();
       images.optionMenu();
     })
-    $('.photo-images').hide();
+    $('#photo-template').hide();
 
   });
 
 // creating the option
 Images.prototype.optionMenu = function () {
-  if( keys.indexOf( this.keyword ) === -1 ){
+  if (keys.indexOf(this.keyword) === -1) {
     $('select').append('<option class = "option"></option>');
     let $option = $('option[class="option"]');
 
@@ -61,18 +58,17 @@ Images.prototype.optionMenu = function () {
 };
 
 // //selecting box filtering
-$('select[name="horn-images"]').on('change', function() {
+$('select[name="horn-images"]').on('change', function () {
   let $selection = $(this).val();
   console.log($selection);
 
-  if($selection === 'default') {
-    $('img').show();
-    return;
-  }
+  if ($selection === 'default') {
+    $('section').show()
+    $('#photo-template').hide();
+  } else {
 
-  $('h2').hide()
-  $('img').hide()
-  $('p').hide()
-  $(`img[alt="${$selection}"]`).show()
+    $('section').hide()
+    $(`section[id="${$selection}"]`).show()
+  }
 })
 
