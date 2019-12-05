@@ -12,6 +12,7 @@ section {
 main{
   float: left;
   height: auto;
+  width: 100%;
   padding: 50px 0 200px 0;
   font-family: 'Baskervville', serif;
 }
@@ -28,5 +29,5 @@ img:hover{
 
 footer {
   float: left;
-  text-align: center;
+  
 }
