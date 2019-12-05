@@ -55,11 +55,11 @@ Finish time: __1100am___
 Actual time needed to complete: __120mins___
 
 
-Number and name of feature: ________________________________
+Number and name of feature: _________________Templatinmg_______________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: ___120mins__
 
-Start time: _____
+Start time: __1130am___
 
 Finish time: _____
 
