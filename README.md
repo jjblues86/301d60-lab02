@@ -68,25 +68,25 @@ Actual time needed to complete: _____
 ------------------------------------------------------------------------
 
 
-Number and name of feature: ________________________________
+Number and name of feature: ____________Sort____________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: __50mins___
 
-Start time: _____
+Start time: ___1150am__
 
-Finish time: _____
+Finish time: ___1220pm__
 
-Actual time needed to complete: _____
+Actual time needed to complete: ___30mins__
 
 ------------------------------------------------------------------------
 
 
-Number and name of feature: ________________________________
+Number and name of feature: ______________flexbox__________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: ___20mins__
 
-Start time: _____
+Start time: ___1300pm__
 
-Finish time: _____
+Finish time: ___1330pm__
 
-Actual time needed to complete: _____
+Actual time needed to complete: __30mins___
