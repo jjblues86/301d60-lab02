@@ -40,3 +40,53 @@ Start time: ___11:05am__
 Finish time: __11:40am___
 
 Actual time needed to complete: __35mins___
+
+------------------------------------------------------------------------
+
+
+Number and name of feature: ______________Pagination__________________
+
+Estimate of time needed to complete: __60mins___
+
+Start time: __900am___
+
+Finish time: __1100am___
+
+Actual time needed to complete: __120mins___
+
+
+Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+------------------------------------------------------------------------
+
+
+Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+------------------------------------------------------------------------
+
+
+Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
