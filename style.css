@@ -11,10 +11,22 @@ section {
 
 main{
   float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   height: auto;
   width: 100%;
   padding: 50px 0 200px 0;
   font-family: 'Baskervville', serif;
+}
+
+li{
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
 }
 
 img {
@@ -30,4 +42,11 @@ img:hover{
 footer {
   float: left;
   
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: auto;
 }
