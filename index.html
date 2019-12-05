@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+  <script id="image-template" type="text/x-handlebars-template">
+      <section class="photo-images"  id="{{keyword}}">
+        <h2>{{title}}</h2>
+        <img src="{{image_url}}" alt="">
+        <p>{{description}}</p>
+      </section>
+</script>
 </head>
 
 <body>
@@ -18,7 +25,6 @@
         <li>
           <button type="button" id="page-2" value="page2">Data 2</button>
         </li>
-        ƒ
       </ul>
     </nav>
     <h1>The Gallery of Horns</h1>
@@ -34,24 +40,13 @@
     </div>
   </header>
   <main>
-    <div id="page-1-div">
-      <section id="photo-template" class="photo-images">
-        <h2></h2>
-        <img src="" alt="">
-        <p></p>
-      </section>
-    </div>
-    <div id="page-2-div">
-      <section id="data2-photo-template" class="photo-images">
-        <h2></h2>
-        <img src="" alt="">
-        <p></p>
-      </section>
-    </div>
+    <div id="page-1-div"></div>
+    <div id="page-2-div"></div>
   </main>
   <footer>
     &copy; 2018 Code Fellows
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="app.js"></script>
 </body>

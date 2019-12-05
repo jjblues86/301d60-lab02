@@ -3,14 +3,15 @@
 const allImages = [];
 const keys = [];
 
+const imgShown = Handlebars.compile($('#image-template').html());
+
 
 // creating a constructor for all the images
-function Images(title, image_url, description, keyword, horn) {
+function Images(title, image_url, description, keyword) {
   this.title = title;
   this.image_url = image_url;
   this.description = description;
   this.keyword = keyword;
-  this.horn = horn;
 
   allImages.push(this);
 }
@@ -19,28 +20,34 @@ function Images(title, image_url, description, keyword, horn) {
 // creating a cloned copy for rendering the images
 Images.prototype.renderClonedImages = function () {
 
-  let clone = $(`#photo-template`).clone();
+  let clone = $(`#image-template`).clone();
 
   clone.find('h2').text(this.title);
   clone.find('img').attr('src', this.image_url);
   clone.attr('id', this.keyword);
   clone.find('p').text(this.description);
   clone.removeAttr('class');
-  $('div[id="page-1-div"]').append(clone);
+  $('#page-1-div').append(clone);
 }
 
+Images.prototype.renderWithHandlebars = function () {
+  const myShownImgs = imgShown(this);
+  console.log('myShownImgs :', myShownImgs);
+  $('#page-1-div').append(myShownImgs);
+}
 
 $.get('data/data.json').then(
   (data) => {
     data.forEach(allImagesFile => {
       let images = new Images(allImagesFile.title, allImagesFile.image_url, allImagesFile.description, allImagesFile.keyword);
-      images.renderClonedImages();
+      images.renderWithHandlebars();
       images.optionMenu();
     })
-    $('#photo-template').hide();
-
   });
 
+// allImages.forEach(imgs => {
+//   imgs.renderWithHandlebars();
+// })
 
 // creating the option
 Images.prototype.optionMenu = function () {
@@ -60,11 +67,9 @@ Images.prototype.optionMenu = function () {
 // //selecting box filtering
 $('select[name="horn-images"]').on('change', function () {
   let $selection = $(this).val();
-  console.log($selection);
 
   if ($selection === 'default') {
     $('section').show()
-    $('#photo-template').hide();
   } else {
 
     $('section').hide()
@@ -80,7 +85,7 @@ $.get('data/page-2.json').then(
   (data) => {
     data.forEach(allImagesFile => {
       let images = new Images(allImagesFile.title, allImagesFile.image_url, allImagesFile.description, allImagesFile.keyword);
-      images.renderClonedImagesFromData2();
+      images.renderDataTwoWithHandlebars();
       images.optionMenuFromData2();
     })
     $('#data2-photo-template').hide();
@@ -97,6 +102,12 @@ Images.prototype.renderClonedImagesFromData2 = function () {
   clone.find('p').text(this.description);
   clone.removeAttr('class');
   $('div[id="page-2-div"]').append(clone);
+}
+
+Images.prototype.renderDataTwoWithHandlebars = function () {
+  const myShownImgs = imgShown(this);
+  console.log('myShownImgs :', myShownImgs);
+  $('#page-2-div').append(myShownImgs);
 }
 
 
@@ -120,7 +131,6 @@ $('nav[id="changeData"]').on('click', 'button', function () {
   // console.log('nav[id="changeData"] :', $('nav[id="changeData"]'));
   // console.log('li :', $('li'));
   let $selection = $(this).val();
-  console.log('keys :', keys);
 
   if ($selection === 'page1') {
     $('div[id="page-2-div"]').children().hide();
