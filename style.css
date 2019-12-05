@@ -1,12 +1,21 @@
 * {
   box-sizing: border-box;
 }
+header{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: auto;
+}
 section {
   float: left;
   height: 300px;
   width: 300px;
   margin: 100px;
-  
+}
+
+select{
+  width: 150px;
 }
 
 main{
@@ -21,18 +30,28 @@ main{
   font-family: 'Baskervville', serif;
 }
 
-li{
-  text-decoration: none;
+p{
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+button{
+  width: 100px;
 }
 
 h1{
   text-align: center;
+  justify-content: center;
 }
 
 img {
   height: 300px;
   width: 300px;
-  border: 1px solid blue;
+  border: 1px  black;
 }
 
 img:hover{
@@ -41,12 +60,5 @@ img:hover{
 
 footer {
   float: left;
-  
 }
 
-header{
-  display: flex;
-  flex-direction: column;
-  width: 150px;
-  margin: auto;
-}
