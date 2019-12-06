@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
   <script id="image-template" type="text/x-handlebars-template">
-      <section class="photo-images"  id="{{keyword}}">
+      <section id="{{keyword}}" data-page="{{page}}">
         <h2>{{title}}</h2>
         <img src="{{image_url}}" alt="">
         <p>{{description}}</p>
@@ -21,20 +21,15 @@
     <nav id="changeData">
         <ul>
           <li>
-            <button type="button" id="page-1" value="page1">Data 1</button>
+            <button type="button" value="page1">Data 1</button>
           </li>
           <li>
-            <button type="button" id="page-2" value="page2">Data 2</button>
+            <button type="button" value="page2">Data 2</button>
           </li>
         </ul>
       </nav>
     <div id="dataOneOptions">
       <select name="horn-images">
-        <option value="default">Filter by Keyword</option>
-      </select>
-    </div>
-    <div id="dataTwoOptions">
-      <select name="data2-images">
         <option value="default">Filter by Keyword</option>
       </select>
     </div>
@@ -47,7 +42,6 @@
   </header>
   <main>
     <div id="page-1-div"></div>
-    <div id="page-2-div"></div>
   </main>
   <footer>
     &copy; 2018 Code Fellows
