@@ -22,7 +22,7 @@ function Images(animal, page) {
 
 Images.prototype.renderWithHandlebars = function () {
   const myShownImgs = imgShown(this);
-  $('#page-1-div').append(myShownImgs);
+  $('#imgContainer').append(myShownImgs);
 }
 
 // creating the option
